@@ -1,0 +1,246 @@
+/* =========================
+   G4BE STREETWEAR
+   Main Stylesheet
+   ========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #080808;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* NAVIGATION */
+
+nav {
+    width: 100%;
+    padding: 20px 50px;
+    background: #0d0d0d;
+    border-bottom: 1px solid #2a0000;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav h1 {
+    color: #ff2020;
+    font-size: 28px;
+    letter-spacing: 3px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #ff2020;
+}
+
+/* HERO */
+
+.hero {
+    min-height: 85vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+            radial-gradient(circle at center, #3b0000 0%, #120000 35%, #080808 70%);
+
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    font-size: clamp(60px, 12vw, 150px);
+    font-weight: 900;
+    letter-spacing: 8px;
+    color: #ffffff;
+
+    text-shadow:
+            0 0 10px #ff0000,
+            0 0 25px #ff0000,
+            0 0 50px #770000;
+}
+
+.hero p {
+    margin-top: 10px;
+    color: #bbbbbb;
+    font-size: 18px;
+    letter-spacing: 4px;
+}
+
+/* BUTTONS */
+
+.btn {
+    display: inline-block;
+    margin-top: 30px;
+
+    padding: 14px 30px;
+
+    background: #d60000;
+    color: white;
+
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    border: 1px solid #ff3030;
+
+    transition: 0.25s;
+}
+
+.btn:hover {
+    background: #ff2020;
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.5);
+}
+
+/* SECTIONS */
+
+section {
+    padding: 80px 8%;
+}
+
+section h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #ff2020;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* PRODUCTS */
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.product {
+    background: #111111;
+    border: 1px solid #292929;
+    padding: 20px;
+
+    transition: 0.25s;
+}
+
+.product:hover {
+    transform: translateY(-6px);
+    border-color: #ff2020;
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.15);
+}
+
+.product img {
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.product h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.product p {
+    color: #aaaaaa;
+}
+
+/* FORMS */
+
+form {
+    max-width: 600px;
+    margin: auto;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+
+    background: #111111;
+    color: white;
+
+    border: 1px solid #333;
+    outline: none;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #ff2020;
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 30px;
+    text-align: center;
+
+    background: #050505;
+    border-top: 1px solid #250000;
+
+    color: #777777;
+}
+
+footer span {
+    color: #ff2020;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    nav {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        letter-spacing: 4px;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
+}

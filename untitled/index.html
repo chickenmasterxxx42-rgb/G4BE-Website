@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>G4BE | Streetwear</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #8b0000;
+      color: white;
+    }
+
+    /* NAVIGATION BAR */
+    nav {
+      height: 80px;
+      background: #650000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 50px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .logo {
+      font-size: 32px;
+      font-weight: 900;
+      letter-spacing: 3px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 35px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #ff4d4d;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      min-height: calc(100vh - 80px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(70px, 13vw, 180px);
+      font-weight: 900;
+      letter-spacing: 12px;
+      text-shadow:
+              0 0 10px rgba(255, 255, 255, 0.25),
+              0 0 30px rgba(255, 0, 0, 0.5);
+    }
+
+    .hero p {
+      margin-top: 15px;
+      font-size: 18px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      opacity: 0.85;
+    }
+
+    .shop-button {
+      margin-top: 40px;
+      padding: 16px 45px;
+      background: white;
+      color: #750000;
+      text-decoration: none;
+      font-weight: 900;
+      letter-spacing: 2px;
+      transition: 0.3s;
+    }
+
+    .shop-button:hover {
+      background: #ffcccc;
+      transform: scale(1.05);
+    }
+
+    /* FEATURED SECTION */
+    .featured {
+      background: #650000;
+      padding: 80px 50px;
+      text-align: center;
+    }
+
+    .featured h2 {
+      font-size: 40px;
+      margin-bottom: 40px;
+      letter-spacing: 4px;
+    }
+
+    .products {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .product {
+      width: 280px;
+      height: 350px;
+      background: #8b0000;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s;
+    }
+
+    .product:hover {
+      transform: translateY(-8px);
+      border-color: white;
+    }
+
+    .product span {
+      font-size: 18px;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #400000;
+      text-align: center;
+      padding: 30px;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+
+    /* MOBILE */
+    @media (max-width: 700px) {
+      nav {
+        padding: 0 20px;
+      }
+
+      .nav-links {
+        gap: 15px;
+      }
+
+      .nav-links a {
+        font-size: 12px;
+      }
+
+      .hero h1 {
+        letter-spacing: 5px;
+      }
+
+      .featured {
+        padding: 60px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="logo">G4BE</div>
+
+  <ul class="nav-links">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="shop.html">SHOP</a></li>
+    <li><a href="about.html">ABOUT</a></li>
+    <li><a href="contact.html">CONTACT</a></li>
+    <lil><a href="shop.html">SHOP NOW</a></lil>
+  </ul>
+</nav>
+
+
+<!-- HOMEPAGE -->
+<section class="hero">
+
+  <h1>G4BE</h1>
+
+  <p>Streetwear for the next generation</p>
+
+  <a href="#" class="shop-button">SHOP NOW</a>
+
+</section>
+
+
+<!-- FEATURED PRODUCTS -->
+<section class="featured">
+
+  <h2>FEATURED</h2>
+
+  <div class="products">
+
+    <div class="product">
+      <span>PRODUCT 01</span>
+    </div>
+
+    <div class="product">
+      <span>PRODUCT 02</span>
+    </div>
+
+    <div class="product">
+      <span>PRODUCT 03</span>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+  © 2026 G4BE. All rights reserved.
+</footer>
+
+</body>
+</html>

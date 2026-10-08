@@ -1,0 +1,159 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>G4BE | Contact</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #8b0000;
+            color: white;
+        }
+
+        nav {
+            height: 80px;
+            background: #650000;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 50px;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: 900;
+            letter-spacing: 3px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact {
+            min-height: calc(100vh - 80px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .contact h1 {
+            font-size: 60px;
+            margin-bottom: 15px;
+        }
+
+        .contact p {
+            font-size: 18px;
+            opacity: 0.85;
+            margin-bottom: 35px;
+        }
+
+        .contact-box {
+            width: 100%;
+            max-width: 500px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 15px;
+            border: none;
+            outline: none;
+            font-size: 16px;
+        }
+
+        textarea {
+            height: 150px;
+            resize: none;
+        }
+
+        button {
+            padding: 15px 40px;
+            border: none;
+            background: white;
+            color: #750000;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #ffcccc;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">G4BE</div>
+
+    <a href="index.html">HOME</a>
+</nav>
+
+<section class="contact">
+
+    <h1>CONTACT G4BE</h1>
+
+    <p>Have a question? Send us a message.</p>
+
+    <div class="contact-box">
+
+        <form action="https://formspree.io/f/xeaeakry" method="POST">
+
+            <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    required
+            >
+
+            <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email"
+                    required
+            >
+
+            <textarea
+                    name="message"
+                    placeholder="Your Message"
+                    required
+            ></textarea>
+
+            <button type="submit">SEND MESSAGE</button>
+
+        </form>
+
+    </div>
+
+        <input type="text" placeholder="Your Name">
+
+        <input type="email" placeholder="Your Email">
+
+        <textarea placeholder="Your Message"></textarea>
+
+        <button type="button">SEND MESSAGE</button>
+
+    </div>
+
+</section>
+
+</body>
+</html>
+```

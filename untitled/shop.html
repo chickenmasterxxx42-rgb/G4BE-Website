@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shop | G4BE Streetwear</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #8b0000;
+            color: white;
+        }
+
+        /* NAVIGATION */
+        nav {
+            background-color: #650000;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff4d4d;
+        }
+
+        /* SHOP HEADER */
+        .shop-header {
+            text-align: center;
+            padding: 70px 20px 40px;
+        }
+
+        .shop-header h1 {
+            font-size: 65px;
+            letter-spacing: 8px;
+        }
+
+        .shop-header p {
+            margin-top: 15px;
+            font-size: 18px;
+        }
+
+        /* PRODUCTS */
+        .products {
+            max-width: 1100px;
+            margin: 30px auto 80px;
+            padding: 20px;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .product {
+            background-color: #650000;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        .product-image {
+            height: 300px;
+            background-color: #222;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .product-image span {
+            font-size: 25px;
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        .product h2 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .buy-button {
+            display: inline-block;
+            background-color: white;
+            color: #650000;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .buy-button:hover {
+            background-color: #ff4d4d;
+            color: white;
+        }
+
+        /* FOOTER */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #650000;
+        }
+
+        /* MOBILE */
+        @media (max-width: 800px) {
+            .products {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .shop-header h1 {
+                font-size: 45px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+
+    <div class="logo">
+        G4BE
+    </div>
+
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="shop.html">SHOP</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+    </ul>
+
+</nav>
+
+
+<!-- SHOP HEADER -->
+<section class="shop-header">
+
+    <h1>SHOP</h1>
+
+    <p>G4BE STREETWEAR</p>
+
+</section>
+
+
+<!-- PRODUCTS -->
+<section class="products">
+
+    <div class="product">
+
+        <div class="product-image">
+            <span>G4BE</span>
+        </div>
+
+        <h2>G4BE TEE</h2>
+
+        <p class="price">$30.00</p>
+
+        <a href="#" class="buy-button">VIEW PRODUCT</a>
+
+    </div>
+
+
+    <div class="product">
+
+        <div class="product-image">
+            <span>G4BE</span>
+        </div>
+
+        <h2>G4BE HOODIE</h2>
+
+        <p class="price">$60.00</p>
+
+        <a href="#" class="buy-button">VIEW PRODUCT</a>
+
+    </div>
+
+
+    <div class="product">
+
+        <div class="product-image">
+            <span>G4BE</span>
+        </div>
+
+        <h2>G4BE PANTS</h2>
+
+        <p class="price">$55.00</p>
+
+        <a href="#" class="buy-button">VIEW PRODUCT</a>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    © 2026 G4BE Streetwear. All rights reserved.
+
+</footer>
+
+</body>
+</html>
